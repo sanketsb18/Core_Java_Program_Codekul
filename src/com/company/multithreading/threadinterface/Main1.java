@@ -1,14 +1,13 @@
 package com.company.multithreading.threadinterface;
 
-public class Main {
-
-    public static void main(String[] args){
-        ThreadInterfaceDemo threadInterfaceDemo = new ThreadInterfaceDemo();
+public class Main1 {
+    public static void main(String[] args) {
+        ThreadInterfaceExample threadInterfaceExample = new ThreadInterfaceExample();
         Thread thread = new Thread(){
             @Override
             public void run() {
                 super.run();
-                threadInterfaceDemo.firstLoop();
+                threadInterfaceExample.loop1();
             }
         };
 
@@ -16,10 +15,11 @@ public class Main {
             @Override
             public void run() {
                 super.run();
-                threadInterfaceDemo.secondLoop();
+                threadInterfaceExample.loop2();
             }
         };
-        thread.start();
         thread1.start();
+        thread.start();
+
     }
 }
