@@ -15,16 +15,16 @@ public class Employees {
 
         System.out.println("--- Enter the details of Employees --- \n");
 
-        System.out.println("Enter employee's name : ");
+        System.out.print("Enter employee's name : ");
         name = scanner.nextLine();
 
-        System.out.println("Enter employees designation : ");
+        System.out.print("Enter employees designation : ");
         designation = scanner.nextLine();
 
-        System.out.println("Enter employees salary : ");
+        System.out.print("Enter employees salary : ");
         salary = scanner.nextDouble();
 
-        System.out.println("Enter employees experience : ");
+        System.out.print("Enter employees experience : ");
         experience = scanner.nextInt();
 
     }
