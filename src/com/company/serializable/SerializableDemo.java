@@ -4,7 +4,7 @@ import com.company.Employees;
 
 import java.io.*;
 
-public class SerializableDemo {
+public class SerializableDemo implements Serializable {
     public static void main(String[] args) {
         Employees e = new Employees();
         e.getDetails();
